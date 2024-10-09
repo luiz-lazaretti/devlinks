@@ -40,6 +40,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 /*esse é um shorthand, atalho de toda a configuração que vem comentada anteriormente*/
 
@@ -176,4 +177,15 @@ footer a:hover {
   background: var(--highlight-color-name);
   transition: background 0.2s;
   border-radius: 50%;
+}
+
+/*media queries*/
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
